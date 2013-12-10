@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday December 10, 2013 at 13:20:59</td>
-            <td>0m28.156s</td>
+            <td>Tuesday December 10, 2013 at 14:08:25</td>
+            <td>1m45.022s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -52,23 +52,23 @@ collect some information about the adopter</pre>
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>1</td>
-          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>4</td>
+          <td>4 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m12.972s</td>
+          <td>0m22.047s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>8</td>
+          <td>8 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m5.904s</td>
+          <td>0m5.435s</td>
         </tr>
 
 
@@ -91,6 +91,93 @@ collect some information about the adopter</pre>
 	      <br />
 	      <h2 class="scenarios">Scenarios:</h2>
 	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Name is required when checking out</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I attempt to checkout without a name
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the error message &quot;Name can&#39;t be blank&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Address is required when checking out</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I attempt to checkout without an address
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the error message &quot;Address can&#39;t be blank&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Adopter should be presented with payment options</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I navigate to the checkout page
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the following payment options:
+	<br />
+	<table border="1" class="param_table">
+		<tr>
+				<th>pay_type</th>
+		</tr>
+			<tr>
+					<td>Purchase order</td>
+			</tr>
+			<tr>
+					<td>Credit card</td>
+			</tr>
+			<tr>
+					<td>Check</td>
+			</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
 		  <th colspan="2" class="passed">Thank you message should be displayed when adoption is complete</th>
