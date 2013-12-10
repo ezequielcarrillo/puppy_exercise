@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Tuesday December 10, 2013 at 14:07:07</td>
-            <td>1m17.405s</td>
+            <td>Tuesday December 10, 2013 at 15:34:13</td>
+            <td>0m32.310s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -53,23 +53,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>2</td>
-          <td>2 <span class="percentage">(100.0%)</span></td>
+          <td>1</td>
+          <td>1 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m24.738s</td>
+          <td>0m9.650s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>13</td>
-          <td>13 <span class="percentage">(100.0%)</span></td>
+          <td>5</td>
+          <td>5 <span class="percentage">(100.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.334s</td>
+          <td>0m1.697s</td>
         </tr>
 
 
@@ -94,7 +94,7 @@
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Adopting one puppy</th>
+		  <th colspan="2" class="passed">Validate cart with one puppy</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
@@ -116,7 +116,7 @@
 		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I click the Complete the Adoption button
+		  Then  I should see &quot;Brook&quot; as the name for line item 1
 
 		  </td>
 		  </tr>
@@ -124,7 +124,7 @@
 		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I complete the adoption form
+		  Then  I should see &quot;$34.95&quot; as the subtotal for line item 1
 
 		  </td>
 		  </tr>
@@ -132,79 +132,7 @@
 		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  I should see &quot;Thank you for adopting a puppy!&quot;
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Adopting two puppies</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the View Details button for &quot;Brook&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the Adopt Me button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the Adopt Another Puppy button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the View Details button for &quot;Hanna&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the Adopt Me button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I click the Complete the Adoption button
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I complete the adoption form
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I should see &quot;Thank you for adopting a puppy!&quot;
+		  Then  I should see &quot;$34.95&quot; as the cart total
 
 		  </td>
 		  </tr>
